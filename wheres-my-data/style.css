@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Alef Hebrew', 'Droid Arabic Kufi', sans-serif;
+  direction: rtl;
+  line-height: 1.5em;
+  font-size: 1em;
+  background-color: #ddd;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  font-size: 1.6em;
+  margin: .5em 0 1em 0;
+  font-weight: bold;
+  color: #D30646;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+h2::before {
+  content: " ";
+  width: 100%;
+  background-color: #ccc;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+h2 span {
+  background-color: #F6F6F6;
+  position: relative;
+  padding: 0 .5em;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: .2em 0;
+}
+#main {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 3em;
+  margin-bottom: 3em;
+  background-color: #f6f6f6;
+}
+#content {
+  padding: 2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+#top-menu {
+  width: 100%;
+  position: fixed;
+}
+
+#top-menu li {
+  display: block;
+  float: right;
+  background-color: #fff;
+  width: 16.66666%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#top-menu li:hover {
+  background-color: #eee;
+}
+#top-menu li.selected {
+  color: #fff;
+  background-color: #D30646;
+}
+#top-menu a {
+  color: #444;
+  text-decoration: none;
+}
+a {
+  color: #00ACF2;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin-bottom: .8em;
+}
+#content section {
+  margin-bottom: 1em;
+}
+.side-logo {
+  width: 110px;
+  float: left;
+  margin: 0 1em;
+}
+.signup {
+  background-color: #D50043;
+  display: block;
+  border-radius: 0px;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em .8em;
+  font-size: 1.8em;
+  text-align: center;
+  margin: .8em auto;
+  width: 4.5em;
+  transition: background-color .2s ease;
+}
+.signup:hover {
+  background-color: #FF005D;
+}
+.signup .material-icons {
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: .1em;
+  position: relative;
+  transition: transform .2s ease;
+}
+.signup:hover .material-icons {
+  transform: translateX(-5px);
+}
+
+.time {
+  color: #999;
+  text-align: left;
+  width: 6em;
+}
+#top-menu {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  background-color: #D50043;
+}
+
+header::before {
+  display: block;
+  content: " ";
+  width: 100%;
+  padding-top: 33.3333%;
+  overflow: hidden;
+}
+
+#header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#header-bg img {
+  width: 100%;
+  position: absolute;
+}
+
+#header-bg h1 {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#plan-table td {
+  padding: .5em;
+}
+
+.speaker {
+  font-style: italic;
+}
+
+#header-data {
+  width: 100%;
+  background-color: #269cdf;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6em;
+  padding: .5em;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+#header-data .material-icons {
+  font-size: 1.1em;
+  vertical-align: sub;
+}
+
+#shows img {
+  float: left;
+  margin: 0 .8em;
+}
+
+.bullet-list li {
+  margin-right: 2em;
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+
