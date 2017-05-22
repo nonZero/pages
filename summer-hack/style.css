@@ -109,6 +109,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 h1 {
 
 }
@@ -157,21 +163,27 @@ strong {
   font-weight: bold;
 }
 
+header {
+  position: fixed;
+  padding: 15px 32px;
+  background-color: white;
+  height: 70px;
+  z-index: 999;
+  box-shadow: 0 1px 2px #c6cbcd;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 16px;
+  }
+}
+
 header,
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-
-header {
-  position: fixed;
-  background-color: white;
-  height: 70px;
-  padding-left: 32px;
-  z-index: 999;
-  box-shadow: 0 1px 2px #c6cbcd;
 }
 
 #title {
@@ -185,15 +197,14 @@ header .signup {
 
 .logo {
   text-decoration: none;
-  padding: 0 32px;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.15em;
 }
 
 .logo img {
   display: inline-block;
-  height: 34px;
-  margin-left: 9px;
+  height: 1.7em;
+  margin-left: 0.45em;
   vertical-align: middle;
 }
 
@@ -258,6 +269,13 @@ main {
 
 section:not(#masthead) {
   padding: 0 45px 35px;
+}
+
+@media (max-width: 480px) {
+  section:not(#masthead) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 section ul
@@ -327,15 +345,14 @@ section ul > li {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-  border-radius: 35px;
+  padding: 0.3em 1em 0.4em;
+  border-radius: 1.75em;
   box-shadow: 0 2px 4px rgba(49,27,146,0.25)
 }
 
 .signup:hover {
   background-color: #40c4ff;
+  text-decoration: none;
 }
 
 .signup .fa {
@@ -359,9 +376,7 @@ section ul > li {
 .signup-container .signup {
   font-size: 1.3em;
   margin: 0 auto;
-  height: 70px;
-  line-height: 66px;
-  width: 240px;
+  padding: 0.75em 2.5em 0.85em;
   transition: background-color .2s ease;
   box-shadow: 0 10px 35px rgba(49,27,146,0.25)
 }
@@ -503,10 +518,6 @@ table + p {
   margin-left: 10px;
 }
 
-#projects > ul > li .new-challenge {
-
-}
-
 #projects > ul > li .new-challenge:before {
   content: "אתגר חדש!";
   font-weight: 600;
@@ -535,20 +546,22 @@ table + p {
   flex-shrink: 0;
 }
 
-.side-logo {
-  width: 110px;
-  float: left;
-  margin: 0 1em;
-}
-
 footer {
-  padding-left: 32px;
-  height: 64px;
+  height: auto;
   background-image: linear-gradient(to right, #1612b3, #990066 32%, #e91e63 97%);
+  flex-wrap: wrap;
+  padding: 5px 32px 15px;
 }
 
 footer * {
   color: white;
+}
+
+footer > * {
+  margin-top: 10px;
+}
+
+footer > a {
 }
 
 footer ul {
@@ -559,3 +572,8 @@ footer li {
   padding: 0 10px;
 }
 
+@media (max-width: 480px) {
+  footer {
+    justify-content: space-around;
+  }
+}
