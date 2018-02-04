@@ -287,13 +287,6 @@ section ul > li {
   display: none;
 }
 
-@media (max-width: 600px) {
-  #hero {
-    padding-bottom: 100%;
-    background-image: url(img/summer-hackathon_mobile_2x.png);
-  }
-}
-
 #event-details {
   background-color: #4aebb6 /* #ea9600 */;
   color: #fff;
