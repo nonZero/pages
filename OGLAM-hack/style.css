@@ -1,0 +1,561 @@
+/* BASE COLORS
+
+text-base:				    #262630
+text-lighter:         #43434b
+blue-base: 				    #4aebb6
+blue-dark: 				    #0091ea
+blue-light: 			    #40c4ff
+blue-lighter: 		    #4aebb6
+magenta-base: 		    #e92f67
+magenta-dark: 		    #990066
+magenta-light: 		    #ce379c
+purple-base:			    #4527a0
+purple-dark:			    #311b92 / (49,27,146)
+grey-light:           #c6cbcd
+
+
+
+*/
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* HTML RESET END */
+
+
+/* RTL-ing fontawesome ul & li */
+
+.fa-ul {
+  padding-right: 0;
+  margin-right: 2.14285714em;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  right: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+/* fontawesome RTL-ing end */
+
+
+body {
+  font-family: 'Assistant', sans-serif;
+  direction: rtl;
+  line-height: 1.4;
+  font-size: 20px;
+  background-color: #ddd;
+  color: #262630;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+
+}
+
+h2 {
+  font-size: 2.1em;
+  color: #e92f67;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.05;
+  color: #e92f67;
+  display: inline-block;
+  box-shadow: inset 0 -6px 0 #4aebb6;
+  padding-left: 4px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #199359;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+a.secondary {
+  font-size: 0.85em;
+}
+
+a.secondary i {
+  margin-left: 5px;
+}
+
+p {
+  margin-bottom: .8em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  height: 70px;
+  padding-left: 32px;
+  z-index: 999;
+  box-shadow: 0 1px 2px #c6cbcd;
+}
+
+#title {
+  color: #e92f67;
+}
+
+#title,
+header .signup {
+  flex-shrink: 0;
+}
+
+.logo {
+  text-decoration: none;
+  padding: 0 32px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.logo img {
+  display: inline-block;
+  height: 34px;
+  margin-left: 9px;
+  vertical-align: middle;
+}
+
+#title,
+nav ul,
+nav li {
+  line-height: 70px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+#nav-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+}
+
+/* Need to make this auto-detected the amount of space required */
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+}
+
+nav li {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0 20px;
+  color: #43434b;
+}
+
+nav li:hover {
+  background-color: #eee;
+}
+
+nav li.selected {
+  color: #fff;
+  background-color: #D30646;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding-top: 70px;
+}
+
+section:not(#masthead) {
+  padding: 0 45px 35px;
+}
+
+section ul
+{
+  list-style-type: disc;
+}
+
+section ul > li {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+#masthead {
+  margin-bottom: 35px;
+}
+
+#hero {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 41.5555555%;
+  background-image: url(img/WEB_cover-gif.gif);
+  background-size: contain;
+}
+
+#hero p {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    padding-bottom: 100%;
+    background-image: url(img/summer-hackathon_mobile_2x.png);
+  }
+}
+
+#event-details {
+  background-color: #4aebb6 /* #ea9600 */;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 40px;
+  height: 40px;
+}
+
+#event-details span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#event-details .fa {
+  margin-left: 2px
+}
+
+
+#intro > p {
+  font-size: 1.15em;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.signup {
+  text-align: center;
+  display: inline-block;
+  background-color: #4aebb6;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(49,27,146,0.25)
+}
+
+.signup:hover {
+  background-color: #85ecca;
+}
+
+.signup .fa {
+  display: inline-block;
+  font-size: 0.7em;
+  vertical-align: middle;
+  margin-right: .1em;
+  position: relative;
+  transition: transform .2s ease;
+}
+
+.signup:hover .fa {
+  transform: translateX(-5px);
+}
+
+.signup-container {
+  width: 100%;
+  text-align: center;
+}
+
+.signup-container .signup {
+  font-size: 1.3em;
+  margin: 0 auto;
+  height: 70px;
+  line-height: 66px;
+  width: 240px;
+  transition: background-color .2s ease;
+  box-shadow: 0 10px 35px rgba(49,27,146,0.25)
+}
+
+.signup-container > p {
+  margin-top: 20px;
+  color: #c6cbcd;
+  font-size: 0.85em;
+}
+
+#wanted h2 {
+  margin-bottom: 30px;
+}
+
+#wanted ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#wanted li {
+  text-align: center;
+  padding: 55px 10px 0;
+  margin-right: 0;
+  flex-basis: 25%;
+  flex-shrink: 0;
+  background-size: 103px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 720px) {
+  #wanted li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  #wanted li {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  #wanted li {
+    flex-basis: 100%;
+  }
+}
+
+#wanted p {
+  margin-top: 10px;
+  border-top: 1px dotted #c6cbcd;
+  padding-top: 10px;
+}
+
+#wanted-developers {
+  background-image: url(icons/icons4web-04.png);
+}
+
+#wanted-analysts {
+  background-image: url(icons/icons4web-03.png);
+}
+
+#wanted-designers {
+  background-image: url(icons/icons4web-02.png);
+}
+
+#wanted-editors {
+  background-image: url(icons/icons4web-01.png);
+}
+
+#schedule table {
+  margin-bottom: 15px;
+}
+
+#schedule table td {
+  padding-bottom: 5px;
+}
+
+#schedule td.time {
+  display: block;
+  font-weight: 600;
+  width: 6em;
+}
+
+#schedule td:not(.time) {
+  color: #43434b;
+}
+
+#schedule ul {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+#schedule ul li {
+  padding-bottom: 5px;
+}
+
+#schedule .lecture {
+  font-weight: 800;
+}
+
+table + p {
+  font-weight: bold;
+}
+
+.speaker {
+  font-style: italic;
+}
+
+#projects h2 {
+  margin-bottom: 15px;
+}
+
+#projects ul {
+  list-style: none;
+}
+
+#projects > ul > li {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 600px) {
+  #projects > ul > li {
+    display: flex;
+  }
+}
+
+.project-name {
+  font-weight: 600;
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+#projects > ul > li li {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+#projects > ul > li .new-challenge {
+
+}
+
+#projects > ul > li .new-challenge:before {
+  content: "אתגר חדש!";
+  font-weight: 600;
+}
+
+.time-location {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+@media (min-width: 600px) {
+  .time-location {
+    display: flex;
+  }
+}
+
+.time-location time,
+.time-location span,
+.time-location a {
+  display: block;
+}
+
+.time-location time {
+  font-weight: 600;
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+.side-logo {
+  width: 110px;
+  float: left;
+  margin: 0 1em;
+}
+
+footer {
+  padding-left: 32px;
+  height: 64px;
+  background-image: linear-gradient(to right, #1612b3, #990066 32%, #e91e63 97%);
+}
+
+footer * {
+  color: white;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  padding: 0 10px;
+}
+
